@@ -1,0 +1,128 @@
+.homeScreen {
+  background-image: url("/public/images/homeimage6.jpg");
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.headings {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+/* .headings {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  font-size: 60px;
+  padding-top: 120px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(232, 228, 228);
+  position: relative;
+  z-index: 2;
+} */
+.headings h1 {
+  display: inline-block;
+  font-family: serif;
+  font-size: 7rem;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  left: 13%;
+  right: 13%;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffff;
+  border: 1px solid black;
+  background: transparent;
+  border-radius: 25% 10%;
+  box-shadow: rgba(0 0 0 / 69%) 0px 26px 30px -10px,
+    rgba(0 0 0 / 73%) 0px 16px 10px -10px;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  max-width: fit-content;
+  width: 100%;
+}
+.headings h1:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+/* .homeScreen h1 {
+  border: 1px solid rgb(32, 32, 32);
+  font-family: sans-serif;
+  max-height: fit-content;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25% 10%;
+  box-shadow: rgba(0 0 0 / 69%) 0px 26px 30px -10px,
+    rgba(0 0 0 / 73%) 0px 16px 10px -10px;
+} */
+.headings p {
+  display: inline-block;
+  position: absolute;
+  bottom: 25%;
+  max-width: fit-content;
+  left: 20%;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 50%;
+  box-shadow: rgba(0 0 0 / 69%) 0px 26px 30px -10px,
+    rgba(0 0 0 / 73%) 0px 16px 10px -10px;
+  color: whitesmoke;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+.headings p:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .headings h1 {
+    max-width: fit-content;
+    width: 75%;
+    font-size: 2rem;
+    color: lightslategray;
+    padding-right: 20px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+  .headings p {
+    position: absolute;
+    bottom: 55%;
+  }
+}
+
+/* .headings p {
+  display: inline-block;
+  font: 300;
+  font-size: 2rem;
+  border: 1px solid rgb(39, 38, 38);
+  max-height: 140px;
+  max-width: 140px;
+  border-radius: 25% 10%;
+  -webkit-text-stroke: 1px #fff;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.headings p:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+} */

@@ -1,0 +1,136 @@
+[debug] [2022-12-15T07:10:58.878Z] ----------------------------------------------------------------------
+[debug] [2022-12-15T07:10:58.880Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-12-15T07:10:58.881Z] CLI Version:   11.18.0
+[debug] [2022-12-15T07:10:58.881Z] Platform:      win32
+[debug] [2022-12-15T07:10:58.881Z] Node Version:  v18.6.0
+[debug] [2022-12-15T07:10:58.902Z] Time:          Thu Dec 15 2022 12:40:58 GMT+0530 (India Standard Time)
+[debug] [2022-12-15T07:10:58.903Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-15T07:10:59.627Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-15T07:10:59.636Z] > authorizing via signed-in user (vinayakmane0987@gmail.com)
+[debug] [2022-12-15T07:10:59.639Z] [iam] checking project vinsapartment-club for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-12-15T07:10:59.692Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinsapartment-club:testIamPermissions [none]
+[debug] [2022-12-15T07:10:59.696Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinsapartment-club:testIamPermissions x-goog-quota-user=projects/vinsapartment-club
+[debug] [2022-12-15T07:10:59.697Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinsapartment-club:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-15T07:11:02.705Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinsapartment-club:testIamPermissions 200
+[debug] [2022-12-15T07:11:02.706Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinsapartment-club:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-15T07:11:02.709Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vinsapartment-club [none]
+[debug] [2022-12-15T07:11:03.499Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vinsapartment-club 200
+[debug] [2022-12-15T07:11:03.499Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vinsapartment-club {"projectId":"vinsapartment-club","projectNumber":"150368376210","displayName":"Vinsapartment-club","name":"projects/vinsapartment-club","resources":{"hostingSite":"vinsapartment-club","realtimeDatabaseInstance":"vinsapartment-club-default-rtdb"},"state":"ACTIVE","etag":"1_b81a66f0-6418-468d-a585-6a61b83c9639"}
+[debug] [2022-12-15T07:11:23.592Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/vinsapartment-club/sites pageToken=&pageSize=10
+[debug] [2022-12-15T07:11:25.245Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/vinsapartment-club/sites 200
+[debug] [2022-12-15T07:11:25.246Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/vinsapartment-club/sites {"sites":[{"name":"projects/vinsapartment-club/sites/vinsapartment-club","defaultUrl":"https://vinsapartment-club.web.app","appId":"1:150368376210:web:da0667542a2a77af139d4b","type":"DEFAULT_SITE"}]}
+[debug] [2022-12-15T07:11:25.251Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:150368376210:web:da0667542a2a77af139d4b/config [none]
+[debug] [2022-12-15T07:11:26.729Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:150368376210:web:da0667542a2a77af139d4b/config 200
+[debug] [2022-12-15T07:11:26.730Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:150368376210:web:da0667542a2a77af139d4b/config {"projectId":"vinsapartment-club","appId":"1:150368376210:web:da0667542a2a77af139d4b","databaseURL":"https://vinsapartment-club-default-rtdb.firebaseio.com","storageBucket":"vinsapartment-club.appspot.com","apiKey":"AIzaSyChWB_BGO4yCTH3H-8TlwJyGGdrEoa_jwA","authDomain":"vinsapartment-club.firebaseapp.com","messagingSenderId":"150368376210"}
+[debug] [2022-12-15T07:11:27.285Z] Error: Epic fail.
+    at prepareFrameworks (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:228:19)
+    at async deploy (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-12-15T10:58:10.684Z] ----------------------------------------------------------------------
+[debug] [2022-12-15T10:58:10.691Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-12-15T10:58:10.693Z] CLI Version:   11.18.0
+[debug] [2022-12-15T10:58:10.693Z] Platform:      win32
+[debug] [2022-12-15T10:58:10.694Z] Node Version:  v18.6.0
+[debug] [2022-12-15T10:58:10.712Z] Time:          Thu Dec 15 2022 16:28:10 GMT+0530 (India Standard Time)
+[debug] [2022-12-15T10:58:10.713Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-15T10:58:11.071Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-15T10:58:11.074Z] > authorizing via signed-in user (vinayakmane0987@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\apartmentwebiste\apartment-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-12-15T10:58:23.619Z] Using project from CLI flag: vinsapartment-club
+[debug] [2022-12-15T10:58:23.628Z] > refreshing access token with scopes: []
+[debug] [2022-12-15T10:58:23.634Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-12-15T10:58:23.634Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-15T10:58:23.813Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2022-12-15T10:58:23.840Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:144:12)
+    at refreshTokens (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:508:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:149:23)
+    at async Client.addAuthHeader (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:140:21)
+    at async Client.request (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:34)
+    at async getFirebaseProject (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:295:21)
+    at async doSetup (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:85:27)
+    at async init (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:36:9)
+[error] 
+[error] Error: Failed to get Firebase project vinsapartment-club. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-12-15T10:58:51.491Z] ----------------------------------------------------------------------
+[debug] [2022-12-15T10:58:51.497Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-12-15T10:58:51.499Z] CLI Version:   11.18.0
+[debug] [2022-12-15T10:58:51.499Z] Platform:      win32
+[debug] [2022-12-15T10:58:51.499Z] Node Version:  v18.6.0
+[debug] [2022-12-15T10:58:51.514Z] Time:          Thu Dec 15 2022 16:28:51 GMT+0530 (India Standard Time)
+[debug] [2022-12-15T10:58:51.515Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-15T10:58:51.720Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-15T10:58:51.721Z] > authorizing via signed-in user (vinayakmane0987@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\apartmentwebiste\apartment-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-12-15T10:59:09.880Z] Using project from CLI flag: vinsapartment-club
+[debug] [2022-12-15T10:59:09.890Z] > refreshing access token with scopes: []
+[debug] [2022-12-15T10:59:09.902Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-12-15T10:59:09.903Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-15T10:59:10.066Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2022-12-15T10:59:10.081Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:144:12)
+    at refreshTokens (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:508:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:149:23)
+    at async Client.addAuthHeader (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:140:21)
+    at async Client.request (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:34)
+    at async getFirebaseProject (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:295:21)
+    at async doSetup (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:85:27)
+    at async init (C:\Users\Om\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:36:9)
+[error] 
+[error] Error: Failed to get Firebase project vinsapartment-club. Please make sure the project exists and your account has permission to access it.
